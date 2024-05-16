@@ -27,7 +27,7 @@ done
 #User can specify VER=... while run this script the specify version.
 #eg. VER=latest /bin/bash <( curl -fsSL https://.... )
 if [ -z "$VER" ]; then
-    VER="latest"
+    VER="20240514"
 fi
 
 #User can specify REPO=... while run this script to replace the default REPO.
@@ -39,7 +39,7 @@ fi
 #Merge them together
 REPO="$REPO:$VER"
 
-CONTAINER_NAME="KLNKSVR-pro"
+CONTAINER_NAME="KLNKSVR-pro-20240514"
 
 [ -n "$PAGER" ] || PAGER=more
 
